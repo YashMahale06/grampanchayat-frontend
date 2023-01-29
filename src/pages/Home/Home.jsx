@@ -3,7 +3,8 @@ import './Home.css';
 import Scard from '../../Components/Scard/Scard';
 import Glancecard from '../../Components/Glancecard/Glancecard';
 import Navbar from '../../Components/Navbar/Navbar.jsx';
-
+import Photos from '../../Components/Photos/Photos';
+import Photocard from '../../Components/Photocard/Photocard';
 const Home = () => {
 
     const title = 'Glance';
@@ -15,6 +16,30 @@ const Home = () => {
       'Item 5',
       
     ];
+
+    const photos = [
+        {
+          url: 'https://unsplash.com/photos/4Iy3f1hMDRQ',
+          title: 'Village 1',
+        },
+        {
+          url: 'https://unsplash.com/photos/1v5tj5_fQ_g',
+          title: 'Village 2',
+        },
+        {
+          url: 'https://unsplash.com/photos/9xEPRH7Vjvk',
+          title: 'Village 3',
+        },
+        {
+          url: 'https://unsplash.com/photos/RwzRFeCej48',
+          title: 'Village 4',
+        },
+      ];
+
+      
+      
+       
+      
     return (
         <>
             <Navbar />
@@ -36,6 +61,8 @@ const Home = () => {
 
                 <Glancecard title={title} list={list} />
             </div>
+            <div className='h-8'></div>
+            <Photos photos={photos} />
         </>
     );
 };
