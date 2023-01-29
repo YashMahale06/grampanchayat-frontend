@@ -5,6 +5,7 @@ import Glancecard from '../../Components/Glancecard/Glancecard';
 import Navbar from '../../Components/Navbar/Navbar.jsx';
 import Photos from '../../Components/Photos/Photos';
 import Photocard from '../../Components/Photocard/Photocard';
+import Footer from '../../Components/Footer/Footer';
 const Home = () => {
 
     const title = 'Glance';
@@ -63,6 +64,7 @@ const Home = () => {
             </div>
             <div className='h-8'></div>
             <Photos photos={photos} />
+            <Footer/>
         </>
     );
 };
